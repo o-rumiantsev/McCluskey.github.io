@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff3e6;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+#header {
+  height: 500px;
+  background-image: url("../images/pantheon.jpg");
+}
+
+#header span {
+  color: #ffe6cc;
+  border-bottom: 2px solid #ffe6cc;
+  font-size: 2vw;
+}
+
+#header-content {
+  display: flex;
+  justify-content: center;
+  padding: 0 10vw 0 10vw;
+  height: 500px;
+  background-color: #ffe6cc;
+  align-items: center;
+}
+
+#header-content span {
+  color: #3a2613;
+  font-size: 2vw;
+  text-indent: 3vw;
+}
+
+#principles {
+  height: 500px;
+  background-image: url("../images/pyramids.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#principles span {
+  color: #4d2600;
+  border-bottom: 2px solid #4d2600;
+  font-size: 2vw;
+}
+
+#principles-content {
+  display: flex;
+  justify-content: center;
+  padding: 0 10vw 0 10vw;
+  height: 100vh;
+  background-color: #ffe6cc;
+  align-items: center;
+}
+
+#principles-content span {
+  color: #3a2613;
+  font-size: 2vw;
+  text-indent: 3vw;
+}
+
+#know-more {
+  height: 500px;
+  background-image: url("../images/chichen-itza.jpg");
+  background-size: cover;
+}
+
+#know-more span {
+  color: #0d1a00;
+  border-bottom: 2px solid #0d1a00;
+  font-size: 2vw;
+}
+
+#know-more-content {
+  display: flex;
+  justify-content: center;
+  padding: 0 10vw 0 10vw;
+  background-color: #ffe6cc;
+  align-items: center;
+}
+
+.image p {
+  color: #0d1a00;
+  font-size: 1.7vw;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.image-link {
+  margin: 2vw 2vw 0 2vw;
+  transition-duration: 0.5s;
+  filter: opacity(0.5) grayscale(50%);
+}
+
+.image-link:hover {
+  filter: opacity(1) grayscale(0%);
+}
+
+#footer {
+  height: 10vh;
+  background-color: #332200;
+}
+
+#footer span {
+  color: #ffe6cc;
+  font-size: 1.2vw;
+  font-family: Arial;
+}

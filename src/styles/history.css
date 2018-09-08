@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff3e6;
+}
+
+#header {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  background-color: #660033;
+  align-items: center;
+}
+
+#header span {
+  color: #ffe6cc;
+  border-bottom: 2px solid #ffe6cc;
+  font-size: 2vw;
+}
