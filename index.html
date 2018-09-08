@@ -1,33 +1,173 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Math site</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff3e6;
+    }
 
-  <head>
-    <title>McCluskey</title>
-    <script type="text/javascript" src="./res/input.js"></script>
-    <script src="./res/separation.js"></script>
-    <script src="./res/iteration.js"></script>
-    <script src="./res/compare.js"></script>
-    <script src="./res/sortGroup.js"></script>
-    <script src="./res/checkGroup.js"></script>
-    <script src="./res/hash.js"></script>
-    <script src="./res/addSolution.js"></script>
-    <script src="./res/output.js"></script>
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+    }
 
-    <link href="./style.css" type="text/css" rel="stylesheet">
-  </head>
+    #header {
+      height: 500px;
+      background-image: url("src/images/pantheon.jpg");
+    }
 
-  <body>
+    #header span {
+      color: #ffe6cc;
+      border-bottom: 2px solid #ffe6cc;
+      font-size: 2vw;
+    }
 
-    <div class="input">
-        <input type="text" name="input" placeholder="Введіть ДДНФ..." id="input" />
-        <button onclick="input()" id="button">Звести до СДНФ</button>
-        <p id="manual">Запишіть в поле вводу через space двійкові коди імплікант, що входять до Досконалої Диз'юнктивної Нормальної Форми</p>
+    #header-content {
+      display: flex;
+      justify-content: center;
+      padding: 0 10vw 0 10vw;
+      height: 500px;
+      background-color: #ffe6cc;
+      align-items: center;
+    }
+
+    #header-content span {
+      color: #3a2613;
+      font-size: 2vw;
+      text-indent: 3vw;
+    }
+
+    #principles {
+      height: 500px;
+      background-image: url("src/images/pyramids.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    #principles span {
+      color: #4d2600;
+      border-bottom: 2px solid #4d2600;
+      font-size: 2vw;
+    }
+
+    #principles-content {
+      display: flex;
+      justify-content: center;
+      padding: 0 10vw 0 10vw;
+      height: 100vh;
+      background-color: #ffe6cc;
+      align-items: center;
+    }
+
+    #principles-content span {
+      color: #3a2613;
+      font-size: 2vw;
+      text-indent: 3vw;
+    }
+
+    #know-more {
+      height: 500px;
+      background-image: url("src/images/chichen-itza.jpg");
+      background-size: cover;
+    }
+
+    #know-more span {
+      color: #0d1a00;
+      border-bottom: 2px solid #0d1a00;
+      font-size: 2vw;
+    }
+
+    #know-more-content {
+      display: flex;
+      justify-content: center;
+      padding: 0 10vw 0 10vw;
+      background-color: #ffe6cc;
+      align-items: center;
+    }
+
+    .image p {
+      color: #0d1a00;
+      font-size: 1.7vw;
+      text-align: center;
+    }
+
+    .image-link {
+      margin: 2vw 2vw 0 2vw;
+      transition-duration: 0.5s;
+      filter: opacity(0.5) grayscale(50%);
+    }
+
+    .image-link:hover {
+      filter: opacity(1) grayscale(0%);
+    }
+
+    #footer {
+      height: 10vh;
+      background-color: #332200;
+    }
+
+    #footer span {
+      color: #ffe6cc;
+      font-size: 1.2vw;
+      font-family: Arial;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="title" id="header">
+      <span>Математика</span>
+  </div>
+
+  <div id="header-content">
+    <span>
+      Матема́тика — наука о структурах, порядке и отношениях, исторически сложившаяся на основе операций подсчёта, измерения и описания формы объектов.
+    </span>
+  </div>
+
+  <div class="title" id="principles">
+    <span>Основные принципы</span>
+  </div>
+
+  <div id="principles-content">
+    <span>
+      Идеализированные свойства исследуемых объектов либо формулируются в виде аксиом, либо перечисляются в определении соответствующих математических объектов. Затем по строгим правилам логического вывода из этих свойств выводятся другие истинные свойства (теоремы). Эта теория в совокупности образует математическую модель исследуемого объекта. Таким образом, первоначально исходя из пространственных и количественных соотношений, математика получает более абстрактные соотношения, изучение которых также является предметом современной математики.<br><br>Традиционно математика делится на теоретическую, выполняющую углублённый анализ внутриматематических структур, и прикладную, предоставляющую свои модели другим наукам и инженерным дисциплинам, причём некоторые из них занимают пограничное с математикой положение. В частности, формальная логика может рассматриваться и как часть философских наук, и как часть математических наук; механика — и физика, и математика; информатика, компьютерные технологии и алгоритмика относятся как к инженерии, так и к математическим наукам и т. д. В литературе было предложено много различных определений математики.
+    </span>
+  </div>
+
+  <div class="title" id="know-more">
+    <span>Узнайте больше о математике</span>
+  </div>
+
+  <div id="know-more-content">
+    <div class="image">
+      <a href="https://google.com">
+        <img class="image-link" src="src/images/pifagor.jpg">
+      </a>
+      <p>История</p>
     </div>
 
-    <div class="solution">
-      <p id="solution">Результат...</p>
+    <div class="image">
+      <a href="https://google.com">
+        <img class="image-link" src="src/images/math.jpg">
+      </a>
+      <p>Основы</p>
     </div>
+  </div>
 
-  </body>
+  <div class="title" id="footer">
+    <p>
+      <span>Author: Oleksii Rumiantsev</span><br>
+      <span>Email: rumiantsev.oleksii@gmail.com</span><br>
+      <span>Github: </span>
+      <a href="https://github.com/o-rumiantsev"><span>o-rumiantsev</span></a>
+    </p>
+  </div>
+</body>
 
 </html>
