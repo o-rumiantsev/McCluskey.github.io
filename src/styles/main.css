@@ -85,11 +85,10 @@ body {
   align-items: center;
 }
 
-.image p {
+.image h3 {
   color: #0d1a00;
   font-size: 1.7vw;
   text-align: center;
-  text-decoration: underline;
 }
 
 .image-link {
