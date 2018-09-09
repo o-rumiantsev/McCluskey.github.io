@@ -4,8 +4,21 @@ body {
   background-color: #fff3e6;
 }
 
+p {
+  margin: 2vw;
+  color: #332200;
+  font-size: 1.2vw;
+  text-indent: 1vw;
+}
+
 a:link, a:visited  {
   text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
 #header {
@@ -66,14 +79,18 @@ a:link, a:visited  {
   border-bottom: 2px solid #332200;
 }
 
-p {
-  margin: 2vw;
-  color: #332200;
-  font-size: 1.2vw;
-  text-indent: 1vw;
+.subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#greece ul, #new-time ul {
+.subtitle h3 {
+  color: #332200;
+  font-size: 1.5vw;
+}
+
+#greece ul, #new-time ul, #europe ul {
   list-style-type: none;
 }
 
@@ -82,6 +99,17 @@ p {
   padding: 1vw;
   border-left: 3px solid #331a00;
   font-size: 1vw;
+}
+
+#europe ul li {
+  margin: 1vw;
+  padding: 1vw;
+  border-left: 3px solid #331a00;
+}
+
+#europe ul li span {
+  color: #331a00;
+  font-size: 1.7vw;
 }
 
 #new-time ul li {
