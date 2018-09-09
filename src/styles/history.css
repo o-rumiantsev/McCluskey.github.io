@@ -4,6 +4,10 @@ body {
   background-color: #fff3e6;
 }
 
+a:link, a:visited  {
+  text-decoration: none;
+}
+
 #header {
   height: 500px;
   display: flex;
@@ -62,9 +66,53 @@ body {
   border-bottom: 2px solid #332200;
 }
 
-.paragraph {
+p {
   margin: 2vw;
   color: #332200;
   font-size: 1.2vw;
   text-indent: 1vw;
+}
+
+#greece ul, #new-time ul {
+  list-style-type: none;
+}
+
+#greece ul li {
+  margin: 1vw;
+  padding: 1vw;
+  border-left: 3px solid #331a00;
+  font-size: 1vw;
+}
+
+#new-time ul li {
+  margin: 1vw;
+  padding: 1vw;
+  border-left: 3px solid #331a00;
+}
+
+#new-time ul li span {
+  color: #331a00;
+  font-size: 1.7vw;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #332200;
+}
+
+#footer ul {
+  list-style-type: none;
+}
+
+#footer ul li span {
+  color: #ffe6cc;
+  font-size: 1.2vw;
+  font-family: Arial;
+}
+
+#footer ul li span a {
+  color: #ffe6cc;
 }
