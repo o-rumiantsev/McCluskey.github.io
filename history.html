@@ -10,7 +10,7 @@
     <h1><span>История математики</span></h1>
   </div>
 
-  <div id="navigation">
+  <div class="sticky" id="navigation">
     <a href="#arithmetics-title">
       <button type="button">Возникновение арифметики</button>
     </a>
@@ -320,18 +320,5 @@
       <li><span>Github: <a href="https://github.com/o-rumiantsev">o-rumiantsev</a></span></li>
     </ul>
   </div>
-
-  <script>
-    var header = document.getElementById("navigation");
-    var sticky = header.offsetTop;
-
-    window.onscroll = function() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-  </script>
 </body>
 </html>

@@ -15,8 +15,8 @@ a:link, a:visited  {
   text-decoration: none;
 }
 
-.sticky {
-  position: fixed;
+div.sticky {
+  position: sticky;
   top: 0;
   width: 100%
 }
